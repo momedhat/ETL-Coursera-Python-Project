@@ -23,23 +23,23 @@ Key Project Tasks:
 
 ### Extract
 > First, scrape the list of the banks in the world as measured by market capitalization <br>
-![Banks List](BankswikiData.png) <br>
+![Banks List](images/BankswikiData.png) <br>
 > The list is based on Relbanks.com's ranking as at 12 January 2018, where the data are derived from annual reports and financial statements of the companies.
 > using Requests library will help to get instance of data and provide a simple API for interacting with HTTP operations.<br>
 > and BeautifulSoap library for handling the data to be declared in DataFrames, and Using ExchangeRate-API we will extract bank_market_cap data.<br>
 > And then, Load the file exchange_rates.csv as a dataframe and find the exchange rate for British pounds with the symbol GBP, store it in the variable
 > exchange_rate, you will be asked for the number.<br>
-> ![exchange_rates.csv](out1.png)<br>
+> ![exchange_rates.csv](images/out1.png)<br>
 
 ### Transform
 > In Transforming phase, I used exchange_rate and the exchange_rates.csv file find the exchange rate of USD to GBP.<br>
 > so, transform function changes the Market Cap (US$ Billion) column from USD to GBP Rounds the Market Cap (US$ Billion) column
 > to 3 decimal places, and the I renamed Market Cap (US$ Billion) to Market Cap (GBP$ Billion).<br>
-> ![transform](transform.png)
+> ![transform](images/transform.png)
 
 ### Load
 > In the load phase, I created a function that takes a dataframe and load it to a csv named bank_market_cap_gbp.csv.<br>
 > and the logging function *log* to log the data.
-> ![log file](log.png)
+> ![log file](images/log.png)
 
 
